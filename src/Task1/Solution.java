@@ -24,8 +24,7 @@ public class Solution {
         for (int i = 0; i < array.length - 1; i++) {
             int j = getMinIndex(array, i);
             sum += j - i + 1;
-            revers(array, i, j);
-            System.out.println(Arrays.toString(array));
+            revers(array, i, j + 1);
         }
         return sum;
     }
